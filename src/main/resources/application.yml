@@ -1,9 +1,11 @@
 spring:
   thymeleaf:
-    cache: false
+    enabled: true  #开启thymeleaf视图解析
+    encoding: utf-8  #编码
+    prefix: classpath:/templates/  #前缀 当然默认也是这个，可以不配置
+    cache: false  #是否使用缓存
+    mode: HTML  #严格的HTML语法模式
+    suffix: .html  #后缀名
 
-server:
-  servlet:
-    context-path: /templates
 
   port: 8080
